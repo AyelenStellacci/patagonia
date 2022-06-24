@@ -1,6 +1,6 @@
 @import 'header';
 @import 'variables';
-@import 'mediaqueries';
+@import 'media';
 @import 'footer';
 
 /* Body */
@@ -10,6 +10,7 @@
 }
 body{
     background-color: $color-fondo;
+    color: $color-letras;
 }
 
 /* Index */
