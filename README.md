@@ -1,2 +1,2 @@
-# quilmes
-Pagina de venta de los productos que distribuye la cerveceria Quilmes. Pagina que decidi hacer en modo de practica, no se puede comprar de verdad.
+# patagonia
+Pagina promocional de Patagonis, donde podras adquirir sus productos. Pagina que decidi hacer en modo de practica, no se puede comprar de verdad.
