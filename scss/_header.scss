@@ -1,0 +1,37 @@
+/* Header */
+header{
+    display: flex;
+    justify-content: space-between;
+    font-display: block;
+    position: relative;
+    background-color: $color-header;
+        .navbar navbar-expand-lg navbar-light{
+            display: flex;
+            padding: 10px;
+            justify-content: flex-end;
+        }
+        .nav-link{
+            display: flex;
+            justify-content: flex-end;
+            font-family: $font-header;
+            font-size: 1.3rem;
+                &:hover{
+                    transform: scale(1.1);
+                    color: $color-letras2;
+                }
+        }
+        .navbar-light .navbar-nav .nav-link.active{
+            color: $color-letras2;
+        }
+        .div__header{
+            align-items: center;
+            margin-left: 15px;
+        }
+        .container-fluid{
+            display: flex;
+            justify-content: space-between;
+        }
+        li{
+            list-style: none;
+        }
+}

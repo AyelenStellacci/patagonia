@@ -1,0 +1,14 @@
+/* Footer */
+.footer{
+    &__general{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        background-color: $color-footer;
+        color: $color-letras2;
+        text-align: center;
+        .footer__texto{
+            margin: 20px;
+        }
+    }
+}

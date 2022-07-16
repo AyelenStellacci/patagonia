@@ -1,14 +1,163 @@
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  font-display: block;
+  position: relative;
+  background-color: #062a1c; }
+  header .navbar navbar-expand-lg navbar-light {
+    display: flex;
+    padding: 10px;
+    justify-content: flex-end; }
+  header .nav-link {
+    display: flex;
+    justify-content: flex-end;
+    font-family: "Staatliches", cursive;
+    font-size: 1.3rem; }
+    header .nav-link:hover {
+      transform: scale(1.1);
+      color: white; }
+  header .navbar-light .navbar-nav .nav-link.active {
+    color: white; }
+  header .div__header {
+    align-items: center;
+    margin-left: 15px; }
+  header .container-fluid {
+    display: flex;
+    justify-content: space-between; }
+  header li {
+    list-style: none; }
+
+/* Footer */
+.footer__general {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  background-color: #062a1c;
+  color: white;
+  text-align: center; }
+  .footer__general .footer__texto {
+    margin: 20px; }
+
 /* Body */
 * {
   margin: 0px;
   padding: 0px; }
 
 body {
-  background-color: #031532;
-  color: white; }
+  background-color: white;
+  color: #062a1c; }
 
 /* Index */
-/* Bebidas */
-/* Merchandising */
-/* Packs */
-/* Suscribete */
+.index__main {
+  display: flex;
+  flex-direction: column; }
+  .index__main .carousel-caption {
+    align-items: flex-start; }
+    .index__main .carousel-caption h1 {
+      font-size: 4rem;
+      font-family: "Alegreya", serif; }
+    .index__main .carousel-caption p {
+      font-size: 2rem;
+      font-family: "Alegreya", serif; }
+
+.index .carousel-caption {
+  display: flex;
+  flex-direction: column;
+  justify-items: center; }
+
+.index .btn-primary {
+  display: flex;
+  justify-content: center;
+  background-color: #062a1c;
+  border-color: #062a1c;
+  width: fit-content; }
+
+/* Microcerveceria */
+.microcerveceria__main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  font-display: block;
+  margin: 2rem; }
+  .microcerveceria__main img {
+    width: 80%; }
+
+.microcerveceria__img1:first-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-column: 1/2; }
+
+.microcerveceria__titulo:nth-child(2) {
+  grid-column: 2/3;
+  text-align: justify;
+  justify-content: center;
+  width: 80%;
+  font-size: 1.2rem; }
+
+.microcerveceria__texto:nth-child(3) {
+  grid-column: 1/2;
+  text-align: justify;
+  justify-content: center;
+  width: 80%;
+  font-size: 1.2rem; }
+
+.microcerveceria__img2:nth-child(4) {
+  grid-column: 2/3;
+  display: flex;
+  justify-content: center;
+  text-align: justify; }
+
+/* Productos */
+/* Refugios */
+.refugios__main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  font-display: block; }
+  .refugios__main img {
+    display: flex;
+    width: 80%;
+    justify-content: center; }
+  .refugios__main .refugios__patagonia {
+    display: flex;
+    justify-content: center;
+    margin: 20px; }
+
+.refugios__imagen:first-child {
+  display: flex;
+  grid-column: 1/4;
+  width: 100%; }
+
+.refugios__texto:nth-child(2) {
+  grid-column: 1/4;
+  display: flex;
+  justify-content: center;
+  text-align: justify;
+  margin: 3rem; }
+
+/* Shop */
+.shop__main {
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px; }
+  .shop__main .shop__variedadesfijas {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row; }
+  .shop__main .shop__estacionales {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row; }
+  .shop__main .shop__edicionespecial {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row; }
+
+.shop__card {
+  border: 4px solid #edecec;
+  margin: 20px; }
+  .shop__card .btn-primary {
+    display: flex;
+    justify-content: center;
+    background-color: #062a1c;
+    border-color: #062a1c; }
