@@ -45,95 +45,139 @@ header {
   padding: 0px; }
 
 body {
-  background-color: white;
+  background-color: #f5eeee;
   color: #062a1c; }
 
 /* Index */
-.index__main {
-  display: flex;
-  flex-direction: column; }
-  .index__main .carousel-caption {
-    align-items: flex-start; }
-    .index__main .carousel-caption h1 {
-      font-size: 4rem;
-      font-family: "Alegreya", serif; }
-    .index__main .carousel-caption p {
-      font-size: 2rem;
-      font-family: "Alegreya", serif; }
-
-.index .carousel-caption {
+.index__main .carousel-caption {
   display: flex;
   flex-direction: column;
-  justify-items: center; }
+  align-items: flex-start;
+  text-align: left;
+  margin-bottom: 30%; }
+  .index__main .carousel-caption h1 {
+    font-size: 3.5rem;
+    font-family: "Alegreya", serif;
+    text-shadow: 0 0 8px black; }
+  .index__main .carousel-caption p {
+    font-size: 1.5rem;
+    font-family: "Alegreya", serif;
+    text-shadow: 0 0 8px black; }
 
-.index .btn-primary {
+.index__main .index__boton {
   display: flex;
-  justify-content: center;
-  background-color: #062a1c;
-  border-color: #062a1c;
-  width: fit-content; }
+  margin-left: 20%; }
+  .index__main .index__boton a {
+    display: flex;
+    font-size: 1rem;
+    color: white;
+    background-color: #062a1c;
+    border-color: #062a1c;
+    width: 140px;
+    text-shadow: 0 0 8px black; }
 
 /* Microcerveceria */
 .microcerveceria__main {
   display: grid;
   grid-template-columns: 1fr 1fr;
   font-display: block;
-  margin: 2rem; }
+  margin: 3rem; }
   .microcerveceria__main img {
-    width: 80%; }
+    width: 100%; }
 
 .microcerveceria__img1:first-child {
   display: flex;
   justify-content: center;
   align-items: center;
-  grid-column: 1/2; }
+  grid-column: 1/2;
+  margin: 2rem; }
 
 .microcerveceria__titulo:nth-child(2) {
   grid-column: 2/3;
+  display: flex;
+  flex-direction: column;
   text-align: justify;
-  justify-content: center;
-  width: 80%;
-  font-size: 1.2rem; }
+  justify-content: flex-start;
+  width: 90%;
+  font-size: 1.2rem;
+  margin: 2rem; }
+  .microcerveceria__titulo:nth-child(2) a {
+    display: flex;
+    font-size: 1rem;
+    color: white;
+    background-color: #062a1c;
+    border-color: #062a1c;
+    width: 30%;
+    text-shadow: 0 0 8px black; }
 
 .microcerveceria__texto:nth-child(3) {
   grid-column: 1/2;
+  display: flex;
   text-align: justify;
-  justify-content: center;
-  width: 80%;
-  font-size: 1.2rem; }
+  justify-content: flex-end;
+  width: 90%;
+  font-size: 1.2rem;
+  margin: 2rem; }
 
 .microcerveceria__img2:nth-child(4) {
   grid-column: 2/3;
   display: flex;
   justify-content: center;
-  text-align: justify; }
+  text-align: justify;
+  margin: 2rem; }
 
-/* Productos */
 /* Refugios */
 .refugios__main {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   font-display: block; }
   .refugios__main img {
-    display: flex;
-    width: 80%;
-    justify-content: center; }
+    width: 100%; }
   .refugios__main .refugios__patagonia {
     display: flex;
-    justify-content: center;
-    margin: 20px; }
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    margin: 50px;
+    border-radius: 20px;
+    box-shadow: 5px 8px 12px #4e4c4c; }
+    .refugios__main .refugios__patagonia img {
+      width: 100%;
+      border-radius: 20px; }
+    .refugios__main .refugios__patagonia .refugios__titulo h2 {
+      display: flex;
+      font-size: 1.5rem;
+      color: white;
+      position: absolute;
+      text-shadow: 0 0 8px black;
+      margin: 0.5rem; }
+    .refugios__main .refugios__patagonia .refugios__texto {
+      display: flex;
+      position: absolute;
+      margin: 0.5rem; }
+      .refugios__main .refugios__patagonia .refugios__texto p {
+        font-size: 1rem;
+        color: white;
+        text-shadow: 0 0 8px black; }
+      .refugios__main .refugios__patagonia .refugios__texto a {
+        font-size: 1rem;
+        color: white;
+        background-color: #062a1c;
+        border-color: #062a1c;
+        width: 140px;
+        text-shadow: 0 0 8px black; }
 
 .refugios__imagen:first-child {
   display: flex;
   grid-column: 1/4;
   width: 100%; }
 
-.refugios__texto:nth-child(2) {
+.refugios__intro:nth-child(2) {
   grid-column: 1/4;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   text-align: justify;
-  margin: 3rem; }
+  margin: 2rem; }
 
 /* Shop */
 .shop__main {
@@ -154,7 +198,7 @@ body {
     flex-direction: row; }
 
 .shop__card {
-  border: 4px solid #edecec;
+  border: 4px solid #ece5e5;
   margin: 20px; }
   .shop__card .btn-primary {
     display: flex;
