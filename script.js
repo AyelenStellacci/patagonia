@@ -12,7 +12,7 @@ do{
 alert('Bienvenido a la pagina oficial de Patagonia:D')
 
 
-/* Objeto */ 
+/* Compra */ 
 class bebida{
     constructor(nombre, ml, precio, variedad, id){
         this.nombre= nombre;
@@ -25,6 +25,15 @@ class bebida{
         this.id = array.length
     }
 }
+const precios = [{
+    envase: lata,
+    valor: 276
+},
+{
+    envase: botella,
+    valor: 396
+}
+]
 const bebidas= [
     new bebida("Vera Ipa Lata", 410, 276, "Fija", 1), 
     new bebida("Weisse Lata", 410, 276, "Fija", 2),
@@ -62,8 +71,8 @@ function mostrar(array){
 }
 alert(mostrar(bebidas)); 
 
-if(continuar){
-    let opcion= prompt("Elegi la opcion que mas te guste: \n 1.Lata Vera Ipa \n 2.Lata Weisse \n 3.Botella Weisse \n 4.Lata Amber Lager \n 5.Botella Amber Lager \n 6.Lata Bohemian Pilsener \n 7.Botella Bohemian Pilsener \n 8. Lata Hoppy Lager \n 9. Botella Hoppy Lager \n 10. Lata Kilometro 24.7 \n 11. Botella Kilometro 24.7 \n 12. Lata Kuné \n 13. Botella Kuné \n 14. Lata Fernández IPA \n 15. Botella Porter \n 16. Lata Octubrefest \n 17. Botella Octubrefest \n 18. Lata Abrazo De Oso \n 19. Lata Sendero Sur \n 20.Lata Solcitra.");
+while(continuar){
+    let opcion= prompt("Elegi la opcion que mas te guste: \n 1.Lata Vera Ipa \n 2.Lata Weisse \n 3.Botella Weisse \n 4.Lata Amber Lager \n 5.Botella Amber Lager \n 6.Lata Bohemian Pilsener \n 7.Botella Bohemian Pilsener \n 8. Lata Hoppy Lager \n 9. Botella Hoppy Lager \n 10. Lata Kilometro 24.7 \n 11. Botella Kilometro 24.7 \n 12. Lata Kuné \n 13. Botella Kuné \n 14. Lata Fernández IPA \n 15. Botella Porter \n 16. Lata Octubrefest \n 17. Botella Octubrefest \n 18. Lata Abrazo De Oso \n 19. Lata Sendero Sur \n 20.Lata Solcitra");
     let valorlata= 276;
     let valorbotella= 396;
 
@@ -154,10 +163,15 @@ if(continuar){
                 alert("El total a abonar es de " +multiplicar(cantidad, valorlata));
             break;
 
-        default:(opcion>20)
+        default:
             alert("Elegiste una opcion invalida. Por favor, introduce un numero del 1 al 20 para continuar");
             break;
         }
         opcion= prompt("Elegi la opcion que mas te guste: \n 1.Lata Vera Ipa \n 2.Lata Weisse \n 3.Botella Weisse \n 4.Lata Amber Lager \n 5.Botella Amber Lager \n 6.Lata Bohemian Pilsener \n 7.Botella Bohemian Pilsener \n 8. Lata Hoppy Lager \n 9. Botella Hoppy Lager \n 10. Lata Kilometro 24.7 \n 11. Botella Kilometro 24.7 \n 12. Lata Kuné \n 13. Botella Kuné \n 14. Lata Fernández IPA \n 15. Botella Porter \n 16. Lata Octubrefest \n 17. Botella Octubrefest \n 18. Lata Abrazo De Oso \n 19. Lata Sendero Sur \n 20.Lata Solcitra.");
     }
 }
+/* if(total>6000){
+    const descuento10 = bebidas.map((precio)=>{return{total,*0.90}})
+}
+return total;
+*/ 
