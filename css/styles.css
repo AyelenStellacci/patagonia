@@ -152,13 +152,16 @@ body {
       margin: 0.5rem; }
     .refugios__main .refugios__patagonia .refugios__texto {
       display: flex;
+      flex-direction: column;
       position: absolute;
       margin: 0.5rem; }
       .refugios__main .refugios__patagonia .refugios__texto p {
         font-size: 1rem;
         color: white;
-        text-shadow: 0 0 8px black; }
+        text-shadow: 0 0 8px black;
+        margin: 5px; }
       .refugios__main .refugios__patagonia .refugios__texto a {
+        border-radius: 10px;
         font-size: 1rem;
         color: white;
         background-color: #062a1c;

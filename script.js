@@ -1,4 +1,4 @@
-/* Inicio */ 
+/* Inicio  
 let edad;
 
 do{
@@ -9,7 +9,7 @@ do{
   }
 
 }while(edad<18)
-alert('Bienvenido a la pagina oficial de Patagonia:D')
+alert('Bienvenido a la pagina oficial de Patagonia:D')*/
 
 
 /* Compra */ 
@@ -56,14 +56,14 @@ function mostrar(array){
     let info= "";
 
     array.forEach(elemento=>{
-        info += elemento.id + "." + "Nombre:" + elemento.nombre + "\nCantidad:" + elemento.ml + "ml" + "\nPrecio:" + "$" + elemento.precio + "\nVariedad:" + elemento.variedad + "\n\n"
+        info += elemento.id + "." + "Nombre: " + elemento.nombre + "\nCantidad: " + elemento.ml + "ml" + "\nPrecio: " + "$" + elemento.precio + "\nVariedad: " + elemento.variedad + "\n\n"
     });
 
     return info;
 }
 alert(mostrar(bebidas)); 
 
-while(continuar){
+
     let opcion= prompt("Elegi la opcion que mas te guste: \n 1.Lata Vera Ipa \n 2.Lata Weisse \n 3.Botella Weisse \n 4.Lata Amber Lager \n 5.Botella Amber Lager \n 6.Lata Bohemian Pilsener \n 7.Botella Bohemian Pilsener \n 8. Lata Hoppy Lager \n 9. Botella Hoppy Lager \n 10. Lata Kilometro 24.7 \n 11. Botella Kilometro 24.7 \n 12. Lata Kuné \n 13. Botella Kuné \n 14. Lata Fernández IPA \n 15. Botella Porter \n 16. Lata Octubrefest \n 17. Botella Octubrefest \n 18. Lata Abrazo De Oso \n 19. Lata Sendero Sur \n 20.Lata Solcitra \n\n Ingresa X para finalizar.");
     let valorlata= 276;
     let valorbotella= 396;
@@ -161,9 +161,15 @@ while(continuar){
         }
         opcion= prompt("Elegi la opcion que mas te guste: \n 1.Lata Vera Ipa \n 2.Lata Weisse \n 3.Botella Weisse \n 4.Lata Amber Lager \n 5.Botella Amber Lager \n 6.Lata Bohemian Pilsener \n 7.Botella Bohemian Pilsener \n 8. Lata Hoppy Lager \n 9. Botella Hoppy Lager \n 10. Lata Kilometro 24.7 \n 11. Botella Kilometro 24.7 \n 12. Lata Kuné \n 13. Botella Kuné \n 14. Lata Fernández IPA \n 15. Botella Porter \n 16. Lata Octubrefest \n 17. Botella Octubrefest \n 18. Lata Abrazo De Oso \n 19. Lata Sendero Sur \n 20.Lata Solcitra. \n\n Ingresa X para finalizar.");
     }
-}
 
+    let microcerveceria = document.getElementById("microcerveceria");
+    microcerveceria.src = "https://static.wixstatic.com/media/fc266a_d03f4551654940489397ef5f6ce2e9c9~mv2.jpg/v1/fill/w_1000,h_562,al_c,q_90,usm_0.66_1.00_0.01/fc266a_d03f4551654940489397ef5f6ce2e9c9~mv2.jpg";
+    
+    let refugios = document.getElementById("refugios");
+    refugios.src = "https://conocedores.com/wp-content/uploads/2021/04/bariloche-cervezas-turismo-27042021in1.jpg";
 
+    let productos = document.getElementById("productos");
+    productos.src = "https://www.revistaaire.com/wp-content/uploads/BALCmenu-Patagonia.jpg";
 /* 
 if(total>6000){
     const descuento10 = bebidas.map((precio)=>{return{total,*0.90}})
